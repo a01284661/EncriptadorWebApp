@@ -1,28 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="https://cdn.simplecss.org/simple.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Interactive GitHub Page</title>
-    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Encriptador AES</h1>
-    <form id="myForm">
-        <label for="fileInput">Seleccionar Archivo:</label>
-        <input type="file" id="fileInput" name="fileInput" required>
-        <br><br>
-        <label for="textInput">Llave:</label>
-        <input type="text" id="keyInput" name="keyInput" required>
-        <br><br>
-        <label for="textInput">Confirmar Llave:</label>
-        <input type="text" id="keyInput2" name="keyInput2" required>
-        <br><br>
-        <button type="button" onclick="handleButtonClick()">Encriptar</button>
-        <br><br>
-        <button type="button" onclick="handleButtonClick()">Desencriptar</button>
-    </form>
-    <p id="result"></p>
+    <div class="container">
+        <h1>Encriptador AES</h1>
+        <main id="myForm">
+            <label for="fileInput">Seleccionar Archivo:</label>
+            <input type="file" id="fileInput" name="fileInput" required>
+            <br><br>
+            <label for="textInput">Llave:</label>
+            <input type="text" id="keyInput" name="keyInput" required>
+            <br><br>
+            <label for="textInput">Confirmar Llave:</label>
+            <input type="text" id="keyInput2" name="keyInput2" required>
+            <br><br>
+            <button type="button" onclick="handleButtonClick()">Encriptar</button>
+            <br><br>
+            <button type="button" onclick="handleButtonClick()">Desencriptar</button>
+        </main>
+        <p id="result"></p>
+    </div>
     <script src="scripts.js"></script>
 </body>
 </html>
